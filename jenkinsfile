@@ -1,0 +1,21 @@
+pipeline{
+    agent any
+    stage{  
+        stage("git checkout"){
+        steps{
+            git url:"https://github.com/chandugithubit/hr-api-multi"
+         }
+        }
+        stage("Maven Build"){
+        steps{
+           sh "mvn clean package"
+         }
+        }
+        stage("Dev Deploy"){
+        steps{
+    echo "deploying to dev environment"         }
+        }
+
+    }
+
+}
