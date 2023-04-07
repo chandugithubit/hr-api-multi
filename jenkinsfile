@@ -16,7 +16,8 @@ pipeline{
                 branch 'develop'
             }
         steps{
-    echo "deploying to dev environment"         }
+    echo "deploying to dev environment"        
+     }
         }
 
     }
@@ -26,5 +27,6 @@ stage("Qa Deploy"){
             }
         steps{
     echo "deploying to qa environment"
+}
 }
 }
