@@ -20,5 +20,10 @@ pipeline{
         }
 
     }
-
+stage("Qa Deploy"){
+            when{
+                branch 'qa'
+            }
+        steps{
+    echo "deploying to qa environment"
 }
