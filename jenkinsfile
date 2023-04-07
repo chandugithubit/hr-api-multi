@@ -27,3 +27,4 @@ stage("Qa Deploy"){
         steps{
     echo "deploying to qa environment"
 }
+}
